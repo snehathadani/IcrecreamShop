@@ -144,9 +144,39 @@
   position: absolute;
   top: 11rem;
 
-  background-color: #E53935;
+  background-color:#FC5A8D;
   border-radius: 50%;
 }
+.ScoopStraberrycircle{
+    position: absolute;
+    z-index: 1;
+    bottom: 1.9rem;
+    width: 3rem;
+    height: 3rem;
+  
+    border-radius: 50%;
+    background-color:rgb(197, 37, 88);
+  }
+  .ScoopStraberrycircle:nth-of-type(2) {
+      left: 2rem;
+    }
+
+    .ScoopStraberrycircle:nth-of-type(3) {
+      left: 4rem;
+    }
+
+    .ScoopStraberrycircle:nth-of-type(4) {
+      left: 6rem;
+    }
+
+    .ScoopStraberrycircle:nth-of-type(5) {
+      left: 8rem;
+    }
+
+    .ScoopStraberrycircle:nth-of-type(6) {
+      left: 10rem;
+    }
+
   .Circle {
     position: absolute;
     z-index: 1;

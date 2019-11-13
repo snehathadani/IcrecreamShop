@@ -4,16 +4,19 @@ import Aux from '../../Containers/HOC/Aux';
 class IcecreamBuilder extends React.Component{
     state= {
         ingredients:{
-            cone:1,
-            scoop:1,
-            sprinkle:1
+            icecreamcone:0,
+            scoop:0,
+            sprinkle:0,
+            cherry:0,
+            scoopstraberry:0
+           
         }
         }
     render(){
     //const [stateObj, setStateObj]= useState({cone:1, scoop:1, sprinkle:1});
     return(
         <Aux>
-            <Icecream/>
+            <Icecream ingredients={this.state.ingredients}/>
         
         </Aux>
     );

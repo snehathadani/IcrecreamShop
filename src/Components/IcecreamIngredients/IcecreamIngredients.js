@@ -6,7 +6,7 @@ class IcecreamIngredients extends React.Component {
         let ingredient = null;
         switch (this.props.type) {
 
-            case ('icecream-cone'):
+            case ('icecreamcone'):
                 ingredient = <div className={classes.IcecreamCone}></div>;
                 break;
 
@@ -43,12 +43,12 @@ class IcecreamIngredients extends React.Component {
 
             case ('scoopstraberry'):
                 ingredient = <div className={classes.ScoopStraberry}>
-                    <div className={classes.Circle}></div>
-                    <div className={classes.Circle}></div>
-                    <div className={classes.Circle}></div>
-                    <div className={classes.Circle}></div>
-                    <div className={classes.Circle}></div>
-                    <div className={classes.Circle}></div>
+                    <div className={classes.ScoopStraberrycircle}></div>
+                    <div className={classes.ScoopStraberrycircle}></div>
+                    <div className={classes.ScoopStraberrycircle}></div>
+                    <div className={classes.ScoopStraberrycircle}></div>
+                    <div className={classes.ScoopStraberrycircle}></div>
+                    <div className={classes.ScoopStraberrycircle}></div>
                 </div>;
 
                 break;

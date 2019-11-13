@@ -6,7 +6,7 @@
     text-align:center;
     font-weight: bold;
     font-size:1.2 rem;
-    background-color: pink;
+    background-color:#ffe6eb;
     padding-left: 29%;
 }
 @media(min-width:500px) and (min-height:401px) {
