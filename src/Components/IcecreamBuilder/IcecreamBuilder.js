@@ -1,6 +1,7 @@
 import React from "react";
 import Icecream from '../Icecream/Icecream';
 import Aux from '../../Containers/HOC/Aux';
+import IcecreamControls from '../IcecreamControls/IcecreamControls';
 class IcecreamBuilder extends React.Component{
     state= {
         ingredients:{
@@ -17,7 +18,7 @@ class IcecreamBuilder extends React.Component{
     return(
         <Aux>
             <Icecream ingredients={this.state.ingredients}/>
-        
+            <IcecreamControls/>
         </Aux>
     );
 
