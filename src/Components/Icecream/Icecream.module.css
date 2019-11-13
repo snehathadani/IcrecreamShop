@@ -1,0 +1,30 @@
+.IcecreamOuter{
+    width:50%;
+    margin:auto;
+    height:500px;
+    
+    text-align:center;
+    font-weight: bold;
+    font-size:1.2 rem;
+    background-color: pink;
+    padding-left: 29%;
+}
+@media(min-width:500px) and (min-height:401px) {
+    .Icecream{
+        width:450px;
+        height:400px;
+    }
+}
+@media(min-width:1000px) and (min-height:700px) {
+    .Icecream{
+        width:700px;
+        height:600px;
+    }
+}
+/*portrait mode*/
+@media(min-width:500px) and (min-height:400px) {
+    .Icecream{
+        width: 350px;
+        height:300px;
+    }
+}

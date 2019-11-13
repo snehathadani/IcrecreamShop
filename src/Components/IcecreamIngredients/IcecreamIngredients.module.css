@@ -1,0 +1,201 @@
+.Icecream {
+  width: 20%;
+  height: 40%;
+
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.IcecreamCone {
+  width: 0;
+  height: 0;
+
+  position: absolute;
+  top: 20rem;
+
+  border-left: 6rem solid transparent;
+  border-right: 6rem solid transparent;
+  border-top: 15rem solid #a3803a;
+}
+
+.Cherry {
+  width: 4rem;
+  height: 4rem;
+
+  position: absolute;
+  left: 21%;
+  top: 3.5rem;
+  z-index: 2;
+
+  border-radius: 50%;
+  background-color: #E53935;
+}
+
+.Sprinkle {
+  height: 1rem;
+  width: 0.25rem;
+
+  z-index: 2;
+  position: absolute;
+  border-radius: 100vh;
+
+  background-color: red;
+}
+  .Sprinkle:nth-of-type(1) {
+    top: 13.5rem;
+
+    transform: rotate(25deg);
+  }
+
+  .Sprinkle:nth-of-type(2) {
+    top: 11rem;
+    left: 3rem;
+
+    background-color: #ffffff;
+    transform: rotate(-25deg);
+  }
+
+  .Sprinkle:nth-of-type(3) {
+    top: 15rem;
+    left: 2rem;
+
+    background-color: #FF9100;
+    transform: rotate(35deg);
+  }
+
+  .Sprinkle:nth-of-type(4) {
+    top: 11rem;
+    left: 6rem;
+
+    background-color: #03A9F4;
+    transform: rotate(50deg);
+  }
+
+  .Sprinkle:nth-of-type(5) {
+    top: 13rem;
+    left: 4rem;
+
+    background-color: #FF4081;
+    transform: rotate(50deg);
+  }
+
+  .Sprinkle:nth-of-type(6) {
+    top: 14.5rem;
+    left: 8rem;
+
+    background-color: #FFFF00;
+    transform: rotate(100deg);
+  }
+
+  .Sprinkle:nth-of-type(7) {
+    top: 10rem;
+    left: 3rem;
+
+    background-color: #8E24AA;
+    transform: rotate(100deg);
+  }
+
+  .Sprinkle:nth-of-type(8) {
+    top: 9rem;
+    left: 5rem;
+
+    background-color: #76FF03;
+    transform: rotate(-100deg);
+  }
+
+  .Sprinkle:nth-of-type(9) {
+    top: 15rem;
+    left: 10rem;
+
+    background-color: #F48FB1;
+    transform: rotate(-100deg);
+  }
+
+  .Sprinkle:nth-of-type(10) {
+    top: 10rem;
+    left: 10rem;
+
+    background-color: #F48FB1;
+    transform: rotate(65deg);
+  }
+
+
+.Scoop {
+  width: 13rem;
+  height: 13rem;
+  margin-left: 0.01%;
+
+  position: absolute;
+  top: 11rem;
+
+  background-color: #4e342e;
+  border-radius: 50%;
+}
+
+.ScoopStraberry {
+  width: 13rem;
+  height: 13rem;
+  margin-left: 0.01%;
+
+  position: absolute;
+  top: 11rem;
+
+  background-color: #E53935;
+  border-radius: 50%;
+}
+  .Circle {
+    position: absolute;
+    z-index: 1;
+    bottom: 1.9rem;
+    width: 3rem;
+    height: 3rem;
+  
+    border-radius: 50%;
+    background-color: #4e342e;
+  }
+    .Circle:nth-of-type(2) {
+      left: 2rem;
+    }
+
+    .Circle:nth-of-type(3) {
+      left: 4rem;
+    }
+
+    .Circle:nth-of-type(4) {
+      left: 6rem;
+    }
+
+    .Circle:nth-of-type(5) {
+      left: 8rem;
+    }
+
+    .Circle:nth-of-type(6) {
+      left: 10rem;
+    }
+   
+@media(min-width:500px) and (min-height:401px){
+  .Icecream{
+    width: 450px;
+    height:400px;
+  }
+}
+
+@media(min-width:1000px) and (min-height:700px){
+  .Icecream{
+    width:700px;
+    height:600px;
+  }
+}
+/*portrait mode*/
+@media(min-width:500px) and (min-height:400px){
+  .Icecream{
+    width:350px;
+    height:300px;
+  }
+}
+
+
