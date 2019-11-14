@@ -33,20 +33,26 @@
     padding: 10px;
     font-weight: bold;
     width: 80px;
+    color: rgb(212, 208, 186);
 }
 
 .BuildControl .Remove {  
-    background-color: #D39952;
-    color: white;
+    background-color: rgb(146, 64, 68);
+    color:rgb(212, 208, 186);
 }
 
 .BuildControl .Add {
-    background-color: #8F5E1E;
-    color: white;
+    background-color: rgb(78, 23, 23);
+    color:rgb(212, 208, 186);
+}
+
+.BuildControl .Display {
+    background-color: rgb(172, 192, 189);
+    color:rgb(148, 71, 68);
 }
 
 .BuildControl .Remove:hover, .BuildControl .Less:active {  
-    background-color: #DAA972;
+    background-color: rgb(190, 46, 27);
     color: white;
 }
 

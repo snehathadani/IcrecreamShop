@@ -1,9 +1,9 @@
 .Icecream {
   width: 20%;
-  height: 40%;
+  height: 60%;
 
-  position: absolute;
-
+  position: relative;;
+  flex-wrap: wrap;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +28,7 @@
 
   position: absolute;
   left: 21%;
-  top: 3.5rem;
+  top: -17rem;
   z-index: 2;
 
   border-radius: 50%;

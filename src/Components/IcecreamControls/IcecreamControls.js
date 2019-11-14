@@ -12,8 +12,13 @@ const controls= [
 const IcecreamControls=(props)=> (
     <div className={classes.BuildControls}>
         {controls.map((ctrl)=>(
-            <IcecreamControl key={ctrl.label} label={ctrl.label}/>
+            <IcecreamControl key={ctrl.label} 
+                    label={ctrl.label}
+                added ={()=> {console.log(ctrl.type);props.ingredientsAdded(ctrl.type)}}
+                    />
+                    
         ))}
+        
     </div>
 )
 

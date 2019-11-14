@@ -10,30 +10,24 @@ let pstyle={
     
 }
 const Icecream = function(props){
-    let readyToeat = Object.keys(props.ingredients)
-    .map(igKey=>{
-        return[...Array(props.ingredients[igKey])]//this will give you array with given elements like [,,], values don't matter to us right now
-        .map((_, i)=> {
-            return <IcecreamIngredients key ={igKey + i} type= {igKey}/>
-        })
-    })
-   // console.log(readyToeat);
-   //I am getting Empty arrays with length I need to flatten them and open them up. SO i will use reduce
-   .reduce((arr,element)=> {
-       return arr.concat(element)
-   }, []);
-   if(readyToeat.length === 0){
-       readyToeat = <p style= {pstyle}> Please Start Choosing </p>
-   }
+    console.log("icecream", props)
+   return(
+    <div className={classes.IcecreamOuter}>
+        {props.sprinkle ? (<div>
+            
+        <IcecreamIngredients type = "sprinkle"/> </div>) : <div/>}
+        {props.cherry ? <IcecreamIngredients type= "cherry"/> : <div/>}
+        
+        {props.scoop ? (
+            <>
+            <IcecreamIngredients type= "scoop" />
+            <IcecreamIngredients type= "circle"/>
+            </>) : <div/>}
 
-    return(
-                <div className={classes.IcecreamOuter}>
-                
-                  
-                   
-                    {readyToeat}
-                </div>
-    )  
-                }
+
+        {props.icecreamcone ? <IcecreamIngredients type= "icecreamcone"/> : <div/>}
+    </div>
+)   
+ }
 
 export default Icecream;

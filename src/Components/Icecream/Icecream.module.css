@@ -2,7 +2,8 @@
     width:50%;
     margin:auto;
     height:500px;
-    
+    display:flex;
+    flex-direction: column;
     text-align:center;
     font-weight: bold;
     font-size:1.2 rem;
