@@ -10,12 +10,10 @@ let pstyle={
     
 }
 const Icecream = function(props){
-    console.log("icecream", props)
+    //console.log("icecream", props)
    return(
     <div className={classes.IcecreamOuter}>
-        {props.sprinkle ? (<div>
-            
-        <IcecreamIngredients type = "sprinkle"/> </div>) : <div/>}
+        {props.sprinkle ? (<div><IcecreamIngredients type = "sprinkle"/> </div>) : <div/>}
         {props.cherry ? <IcecreamIngredients type= "cherry"/> : <div/>}
         
         {props.scoop ? (

@@ -15,11 +15,11 @@
   height: 0;
 
   position: absolute;
-  top: 20rem;
-
-  border-left: 6rem solid transparent;
-  border-right: 6rem solid transparent;
-  border-top: 15rem solid #a3803a;
+  top: 25rem;
+  margin-left:-14px;
+  border-left: 5rem solid transparent;
+  border-right: 5rem solid transparent;
+  border-top: 9rem solid #a3803a;
 }
 
 .Cherry {
@@ -123,17 +123,20 @@
     transform: rotate(65deg);
   }
 
-
-.Scoop {
-  width: 13rem;
-  height: 13rem;
-  margin-left: 0.01%;
+.ScoopContainer{
 
   position: absolute;
   top: 11rem;
+  border-radius: 50%;
+}
+
+.Scoop {
 
   background-color: #4e342e;
   border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  margin-left: 0.01%;
 }
 
 .ScoopStraberry {
@@ -180,7 +183,7 @@
   .Circle {
     position: absolute;
     z-index: 1;
-    bottom: 1.9rem;
+    bottom: .5rem;
     width: 3rem;
     height: 3rem;
   
@@ -188,23 +191,23 @@
     background-color: #4e342e;
   }
     .Circle:nth-of-type(2) {
-      left: 2rem;
+      left: -1rem;
     }
 
     .Circle:nth-of-type(3) {
-      left: 4rem;
+      left: 1rem;
     }
 
     .Circle:nth-of-type(4) {
-      left: 6rem;
+      left: 2rem;
     }
 
     .Circle:nth-of-type(5) {
-      left: 8rem;
+      left: 3rem;
     }
 
     .Circle:nth-of-type(6) {
-      left: 10rem;
+      left: 6rem;
     }
    
 @media(min-width:500px) and (min-height:401px){

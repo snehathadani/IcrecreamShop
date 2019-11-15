@@ -16,6 +16,7 @@ class IcecreamIngredients extends React.Component {
 
             case ('sprinkle'):
                 ingredient = (<div className={classes.Icecream}>
+
                     <div className={classes.Sprinkle}></div>
                     <div className={classes.Sprinkle}></div>
                     <div className={classes.Sprinkle}></div>
@@ -30,13 +31,16 @@ class IcecreamIngredients extends React.Component {
                 break;
 
             case ('scoop'):
-                ingredient = <div className={classes.Scoop}>
+                ingredient = <div className={classes.ScoopContainer}>
+                    <div className= {classes.Scoop}>
                     <div className={classes.Circle}></div>
                     <div className={classes.Circle}></div>
                     <div className={classes.Circle}></div>
                     <div className={classes.Circle}></div>
                     <div className={classes.Circle}></div>
                     <div className={classes.Circle}></div>
+                    </div>
+                    
                 </div>;
 
                 break;
