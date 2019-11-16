@@ -164,31 +164,31 @@
 .ScoopStraberrycircle{
     position: absolute;
     z-index: 1;
-    bottom: 1.9rem;
+    bottom: .5rem;
     width: 3rem;
     height: 3rem;
   
     border-radius: 50%;
-    background-color:rgb(197, 37, 88);
+    background-color:#FC5A8D;
   }
   .ScoopStraberrycircle:nth-of-type(2) {
-      left: 2rem;
+      left: -1rem;
     }
 
     .ScoopStraberrycircle:nth-of-type(3) {
-      left: 4rem;
+      left: 1rem;
     }
 
     .ScoopStraberrycircle:nth-of-type(4) {
-      left: 6rem;
+      left: 3rem;
     }
 
     .ScoopStraberrycircle:nth-of-type(5) {
-      left: 8rem;
+      left: 5rem;
     }
 
     .ScoopStraberrycircle:nth-of-type(6) {
-      left: 10rem;
+      left: 6rem;
     }
 
   .Circle {
