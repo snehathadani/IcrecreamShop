@@ -6,7 +6,7 @@ import IcecreamControl from "./IcecreamControl";
 const controls = [
     { label: 'Cone', type: 'icecreamcone' },
     { label: 'Chocolate Scoop', type: 'scoop' },
-    { label: 'Strawberry Scoop', type: 'straberryscoop' },
+    { label: 'Strawberry Scoop', type: 'scoopstraberry' },
     { label: 'Cherry', type: 'cherry' },
     { label: 'Sprinkle', type: 'sprinkle' },
 ];

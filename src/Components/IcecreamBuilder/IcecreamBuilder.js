@@ -30,11 +30,11 @@ function IcecreamBuilder(props) {
     const[purchasable,setPurchasable] = useState(false);
 
     const addIngredient = (type) => {
-        if(type === 'scoop') {
+        if(type === 'scoop' || type === 'scoopstraberry') {
             if(!ingredients['scoop1']) {
-                setIngredient({...ingredients, 'scoop1': 'chocolate'}); 
+                setIngredient({...ingredients, 'scoop1': type === 'scoop' ? 'chocolate' : 'straberry'}); 
             } else {
-                setIngredient({...ingredients, 'scoop2': 'chocolate'}); 
+                setIngredient({...ingredients, 'scoop2': type === 'scoop' ? 'chocolate' : 'straberry'}); 
             }      
         } else {
             setIngredient({...ingredients, [type]: 1}); 

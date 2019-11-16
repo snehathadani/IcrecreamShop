@@ -27,15 +27,15 @@ const Icecream = function(props){
 
         {scoops===1 ? (
             <div className={classes.ScoopContainer}>
-                <IcecreamIngredients type= "scoop" lower="lower" />
+                <IcecreamIngredients type = {props.scoop1 === 'chocolate' ? 'scoop' : 'scoopstraberry'} lower="lower" />
                
             </div>) : <div/>
         }
 
         {scoops===2 ? (
             <div className={classes.ScoopContainer}>
-                <IcecreamIngredients type= "scoop" lower="lower"/>
-                <IcecreamIngredients type= "scoop"  />
+                <IcecreamIngredients type = {props.scoop1 === 'chocolate' ? 'scoop' : 'scoopstraberry'} lower="lower"/>
+                <IcecreamIngredients type = {props.scoop2 === 'chocolate' ? 'scoop' : 'scoopstraberry'}  />
                 
             </div>) : <div/>
         }

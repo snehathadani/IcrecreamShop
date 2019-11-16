@@ -7,6 +7,7 @@ import Scoop from './Scoop'
 class IcecreamIngredients extends React.Component {
     render() {
         let ingredient = null;
+        console.log("ingredients", this.props)
         switch (this.props.type) {
             case ('icecreamcone'):
                 ingredient = <div className={classes.IcecreamCone}></div>;
@@ -26,7 +27,8 @@ class IcecreamIngredients extends React.Component {
                 break;
 
             case ('scoopstraberry'):
-                ingredient = <Scoop scoopClass={classes.ScoopStraberry} circleClass={classes.ScoopStraberrycircle}/>
+                ingredient = <Scoop scoopClass={classes.StrawberryScoop} circleClass={classes.ScoopStraberrycircle}
+                            lower={this.props.lower}/>
                 break;
             
           
