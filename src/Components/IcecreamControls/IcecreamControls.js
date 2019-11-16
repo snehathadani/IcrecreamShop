@@ -13,10 +13,13 @@ const controls = [
 const IcecreamControls = (props) => {
     const ingredientCount = (ingredients, type) => {
         console.log("ingredients", ingredients)
-        if(type === 'scoop') {
-            return ingredients['scoop1']  === 'chocolate' || ingredients['scoop2'] === 'chocolate'
-        } else if (type === 'scoopstraberry') {
-            return ingredients['scoop1']  === 'straberry' || ingredients['scoop2'] === 'straberry'
+        let scoopCount = 0
+        if(type.startsWith('scoop')) {
+             if(ingredients['scoop1'])
+                scoopCount ++;
+            if (ingredients['scoop2'])
+                scoopCount ++;
+            return scoopCount;
         } 
         else {
             return ingredients[type];
