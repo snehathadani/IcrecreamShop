@@ -146,11 +146,13 @@
 .Scoop:nth-of-type(1) {
   position: relative;
   margin-top: 90%;
+  z-index: 2;
 }
 
 .Scoop:nth-of-type(2) {
   position: relative;
   margin-top: -140%;
+  z-index: 1;
 }
 
 .ChocolateScoop {
