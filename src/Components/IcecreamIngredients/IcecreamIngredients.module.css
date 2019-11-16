@@ -1,13 +1,5 @@
 .Icecream {
-  width: 20%;
-  height: 60%;
 
-  position: relative;;
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .IcecreamCone {
@@ -22,19 +14,41 @@
   border-top: 9rem solid #a3803a;
 }
 
-.Cherry {
-  width: 4rem;
-  height: 4rem;
+.CherryTwo {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
 
   position: absolute;
-  left: 21%;
-  top: -17rem;
+  left: 43%;
+  top: 13rem;
   z-index: 2;
 
   border-radius: 50%;
   background-color: #E53935;
 }
 
+.CherryOne {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+
+  position: absolute;
+  left: 41%;
+  top:18rem;
+  z-index: 2;
+
+  border-radius: 50%;
+  background-color: #E53935;
+}
 .Sprinkle {
   height: 1rem;
   width: 0.25rem;
@@ -47,7 +61,7 @@
 }
   .Sprinkle:nth-of-type(1) {
     top: 13.5rem;
-
+    left:5rem;
     transform: rotate(25deg);
   }
 
@@ -109,7 +123,7 @@
 
   .Sprinkle:nth-of-type(9) {
     top: 15rem;
-    left: 10rem;
+    left: 6rem;
 
     background-color: #F48FB1;
     transform: rotate(-100deg);
@@ -117,39 +131,38 @@
 
   .Sprinkle:nth-of-type(10) {
     top: 10rem;
-    left: 10rem;
+    left: 8rem;
 
     background-color: #F48FB1;
     transform: rotate(65deg);
   }
 
-.ScoopContainer{
-
-  position: absolute;
-  top: 11rem;
-  border-radius: 50%;
-}
 
 .Scoop {
-
-  background-color: #4e342e;
   border-radius: 50%;
-  width: 8rem;
+  width: 9rem;
   height: 8rem;
   margin-left: 0.01%;
 }
 
-.ScoopStraberry {
-  width: 13rem;
-  height: 13rem;
-  margin-left: 0.01%;
-
-  position: absolute;
-  top: 11rem;
-
-  background-color:#FC5A8D;
-  border-radius: 50%;
+.Scoop:nth-of-type(1) {
+  position: relative;
+  margin-top: 90%;
 }
+
+.Scoop:nth-of-type(2) {
+  position: relative;
+  margin-top: -140%;
+}
+
+.ChocolateScoop {
+  background-color: #4e342e;
+}
+
+.StrawberryScoop {
+  background-color:#FC5A8D;
+}
+
 .ScoopStraberrycircle{
     position: absolute;
     z-index: 1;
@@ -199,11 +212,11 @@
     }
 
     .Circle:nth-of-type(4) {
-      left: 2rem;
+      left: 3rem;
     }
 
     .Circle:nth-of-type(5) {
-      left: 3rem;
+      left: 5rem;
     }
 
     .Circle:nth-of-type(6) {

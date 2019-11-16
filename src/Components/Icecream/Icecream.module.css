@@ -10,6 +10,11 @@
     background-color:#ffe6eb;
     padding-left: 29%;
 }
+.ScoopContainer{
+    position: absolute;
+    top: 11rem;
+    border-radius: 50%;
+  }
 @media(min-width:500px) and (min-height:401px) {
     .Icecream{
         width:450px;

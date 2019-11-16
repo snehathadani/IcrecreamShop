@@ -5,7 +5,8 @@ import IcecreamControl from "./IcecreamControl";
 
 const controls = [
     { label: 'Cone', type: 'icecreamcone' },
-    { label: 'Scoop', type: 'scoop' },
+    { label: 'Chocolate Scoop', type: 'scoop' },
+    { label: 'Strawberry Scoop', type: 'straberryscoop' },
     { label: 'Cherry', type: 'cherry' },
     { label: 'Sprinkle', type: 'sprinkle' },
 ];
@@ -16,14 +17,14 @@ const IcecreamControls = (props) => (
             <IcecreamControl key={ctrl.label}
                 label={ctrl.label}
                 type={ctrl.type}
-                added={() => { console.log(ctrl.type); props.ingredientsAdded(ctrl.type) }}
+                count={props.allCounts[ctrl.type]}
+                added={() => { props.ingredientsAdded(ctrl.type) }}
                 addPrice={() => { props.addPrice(ctrl.type) }}
                 removed={() => props.ingredientsRemoved(ctrl.type)}
-                allCounts={props.allCounts}
             />
 
         ))}
-
+        <button className= {classes.OrderButton} disabled={props.price===0}> Order Now </button>
     </div>
 )
 

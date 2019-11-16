@@ -13,10 +13,10 @@ const INGREDIENT_PRICE =    {
 function IcecreamBuilder(props) {
     const [ingredients, setIngredient] = useState({
         'icecreamcone':0,
-        'scoop':0,
+        'scoop1': undefined,
+        'scoop2' : undefined,
         'sprinkle':0,
         'cherry':0,
-        'scoopstraberry':0
     });
     const[totalPrice, setTotalprice] = useState(0.0)
 
@@ -27,6 +27,20 @@ function IcecreamBuilder(props) {
     const removeIngredientPrice = (type) => {
         setTotalprice(totalPrice - INGREDIENT_PRICE[type])
     }
+    const[purchasable,setPurchasable] = useState(false);
+
+    const addIngredient = (type) => {
+        if(type === 'scoop') {
+            if(!ingredients['scoop1']) {
+                setIngredient({...ingredients, 'scoop1': 'chocolate'}); 
+            } else {
+                setIngredient({...ingredients, 'scoop2': 'chocolate'}); 
+            }      
+        } else {
+            setIngredient({...ingredients, [type]: 1}); 
+        }
+        addIngredientPrice(type);
+    }
 
     const disabledInfo= {...ingredients}
         for(let key in disabledInfo){
@@ -36,15 +50,17 @@ function IcecreamBuilder(props) {
             
         <Aux>
             <Icecream icecreamcone={ingredients['icecreamcone']}
-                      scoop = {ingredients['scoop']}
+                      scoop1 = {ingredients['scoop1']}
+                      scoop2 = {ingredients['scoop2']}
                       sprinkle = {ingredients['sprinkle']}
                       cherry = {ingredients['cherry']}
-                      scoopstraberry = {ingredients['scoopstraberry']}
                       allCounts = {ingredients}/>
-            <IcecreamControls ingredientsAdded = {(type) =>  {setIngredient({...ingredients, [type]: 1}); addIngredientPrice(type)}}
+                      
+            <IcecreamControls ingredientsAdded = {addIngredient}
                               ingredientsRemoved= {(type)=> {setIngredient({...ingredients, [type]:0})}}
                               price = {totalPrice}
-                              allCounts = {ingredients}/>
+                              allCounts = {ingredients}
+                              purchasehandler={(totalPrice)=>{setPurchasable({purchasable:totalPrice>0})}}/>
         </Aux>
     );
 

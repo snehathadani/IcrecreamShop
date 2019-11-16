@@ -1,61 +1,35 @@
 import React from "react";
 import classes from "./IcecreamIngredients.module.css";
 import PropTypes from 'prop-types';
+import Sprinkles from './Sprinkles';
+import Scoop from './Scoop'
+
 class IcecreamIngredients extends React.Component {
     render() {
         let ingredient = null;
         switch (this.props.type) {
-
             case ('icecreamcone'):
                 ingredient = <div className={classes.IcecreamCone}></div>;
                 break;
 
             case ('cherry'):
-                ingredient = <div className={classes.Icecream}> <div className={classes.Cherry}></div></div>;
+                ingredient =<div className={this.props.scoops===2 ? classes.CherryTwo:classes.CherryOne}></div>;
                 break;
 
             case ('sprinkle'):
-                ingredient = (<div className={classes.Icecream}>
-
-                    <div className={classes.Sprinkle}></div>
-                    <div className={classes.Sprinkle}></div>
-                    <div className={classes.Sprinkle}></div>
-                    <div className={classes.Sprinkle}></div>
-                    <div className={classes.Sprinkle}></div>
-                    <div className={classes.Sprinkle}></div>
-                    <div className={classes.Sprinkle}></div>
-                    <div className={classes.Sprinkle}></div>
-                    <div className={classes.Sprinkle}></div>
-                    <div className={classes.Sprinkle}></div>
-                </div>);
+                ingredient = <Sprinkles/>
                 break;
 
             case ('scoop'):
-                ingredient = <div className={classes.ScoopContainer}>
-                    <div className= {classes.Scoop}>
-                    <div className={classes.Circle}></div>
-                    <div className={classes.Circle}></div>
-                    <div className={classes.Circle}></div>
-                    <div className={classes.Circle}></div>
-                    <div className={classes.Circle}></div>
-                    <div className={classes.Circle}></div>
-                    </div>
-                    
-                </div>;
-
+                ingredient = <Scoop scoopClass={classes.ChocolateScoop}  circleClass={classes.Circle} 
+                            lower={this.props.lower}/>
                 break;
 
             case ('scoopstraberry'):
-                ingredient = <div className={classes.ScoopStraberry}>
-                    <div className={classes.ScoopStraberrycircle}></div>
-                    <div className={classes.ScoopStraberrycircle}></div>
-                    <div className={classes.ScoopStraberrycircle}></div>
-                    <div className={classes.ScoopStraberrycircle}></div>
-                    <div className={classes.ScoopStraberrycircle}></div>
-                    <div className={classes.ScoopStraberrycircle}></div>
-                </div>;
-
+                ingredient = <Scoop scoopClass={classes.ScoopStraberry} circleClass={classes.ScoopStraberrycircle}/>
                 break;
+            
+          
 
             default:
                 ingredient = null;
