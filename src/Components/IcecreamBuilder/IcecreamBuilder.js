@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Icecream from '../Icecream/Icecream';
 import Aux from '../../Containers/HOC/Aux';
 import IcecreamControls from '../IcecreamControls/IcecreamControls';
+import Modal from '../OrderSummery/Modal';
+import OrderSummary from "../OrderSummery/OrderSummary";
 const INGREDIENT_PRICE = {
     'icecreamcone': .50,
     'scoop': 1,
@@ -70,6 +72,7 @@ function IcecreamBuilder(props) {
 
     return (
         <Aux>
+            <Modal> <OrderSummary ingredients={ingredients} />  </Modal>
             <Icecream icecreamcone={ingredients['icecreamcone']}
                 scoop1={ingredients['scoop1']}
                 scoop2={ingredients['scoop2']}
