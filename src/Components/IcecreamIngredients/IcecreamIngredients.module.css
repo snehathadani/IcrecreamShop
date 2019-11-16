@@ -58,78 +58,78 @@
   background-color: red;
 }
   .Sprinkle:nth-of-type(1) {
-    top: 13.5rem;
-    left:5rem;
+    top: 23rem;
+    left:31rem;
     transform: rotate(25deg);
   }
 
   .Sprinkle:nth-of-type(2) {
-    top: 11rem;
-    left: 3rem;
+    top: 25rem;
+    left: 32rem;
 
     background-color: #ffffff;
     transform: rotate(-25deg);
   }
 
   .Sprinkle:nth-of-type(3) {
-    top: 15rem;
-    left: 2rem;
+    top: 24rem;
+    left: 31rem;
 
     background-color: #FF9100;
     transform: rotate(35deg);
   }
 
   .Sprinkle:nth-of-type(4) {
-    top: 11rem;
-    left: 6rem;
+    top: 25rem;
+    left: 33rem;
 
     background-color: #03A9F4;
     transform: rotate(50deg);
   }
 
   .Sprinkle:nth-of-type(5) {
-    top: 13rem;
-    left: 4rem;
+    top: 22rem;
+    left: 30rem;
 
     background-color: #FF4081;
     transform: rotate(50deg);
   }
 
   .Sprinkle:nth-of-type(6) {
-    top: 14.5rem;
-    left: 8rem;
+    top: 25rem;
+    left: 31rem;
 
     background-color: #FFFF00;
     transform: rotate(100deg);
   }
 
   .Sprinkle:nth-of-type(7) {
-    top: 10rem;
-    left: 3rem;
+    top: 23rem;
+    left: 30rem;
 
     background-color: #8E24AA;
     transform: rotate(100deg);
   }
 
   .Sprinkle:nth-of-type(8) {
-    top: 9rem;
-    left: 5rem;
+    top: 21rem;
+    left: 30rem;
 
     background-color: #76FF03;
     transform: rotate(-100deg);
   }
 
   .Sprinkle:nth-of-type(9) {
-    top: 15rem;
-    left: 6rem;
+    top: 25rem;
+    left: 29rem;
 
     background-color: #F48FB1;
     transform: rotate(-100deg);
   }
 
   .Sprinkle:nth-of-type(10) {
-    top: 10rem;
-    left: 8rem;
+    top: 22rem;
+    left: 28rem;
 
     background-color: #F48FB1;
     transform: rotate(65deg);
