@@ -72,7 +72,7 @@ function IcecreamBuilder(props) {
 
     return (
         <Aux>
-            <Modal> <OrderSummary ingredients={ingredients} />  </Modal>
+            <Modal show ={purchasing }> <OrderSummary ingredients={ingredients} />  </Modal>
             <Icecream icecreamcone={ingredients['icecreamcone']}
                 scoop1={ingredients['scoop1']}
                 scoop2={ingredients['scoop2']}
@@ -84,8 +84,10 @@ function IcecreamBuilder(props) {
                 ingredientsRemoved={removeIngredient}
                 price={totalPrice}
                 allCounts={ingredients}
-                purchasehandler={(totalPrice) => { setPurchasable({ purchasable: totalPrice > 0 }) }} />
-                purchasing= {(e)=> {setPurchasing({purchasing:true}) }}
+                purchasehandler={(totalPrice) => { setPurchasable({ purchasable: totalPrice > 0 }) }}
+                purchasing= {(e)=> {setPurchasing({purchasing:true}) }} 
+                />
+                
         </Aux>
     );
 
