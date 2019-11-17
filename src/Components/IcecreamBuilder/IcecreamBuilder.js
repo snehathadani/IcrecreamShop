@@ -21,7 +21,7 @@ function IcecreamBuilder(props) {
         'cherry': 0,
     });
     const [totalPrice, setTotalprice] = useState(0.0)
-
+    const [purchasing, setPurchasing] = useState(false)
     const addIngredientPrice = (type) => {
         setTotalprice(totalPrice + INGREDIENT_PRICE[type])
     }
@@ -85,6 +85,7 @@ function IcecreamBuilder(props) {
                 price={totalPrice}
                 allCounts={ingredients}
                 purchasehandler={(totalPrice) => { setPurchasable({ purchasable: totalPrice > 0 }) }} />
+                purchasing= {(e)=> {setPurchasing({purchasing:true}) }}
         </Aux>
     );
 

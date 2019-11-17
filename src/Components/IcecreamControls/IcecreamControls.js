@@ -40,7 +40,9 @@ const IcecreamControls = (props) => {
             />
 
         ))}
-        <button className= {classes.OrderButton} disabled={props.price===0}> Order Now </button>
+        <button className= {classes.OrderButton}
+                 disabled={props.price===0}
+                 onClick= {props.purchasing} > Order Now </button>
     </div>
 )}
 
