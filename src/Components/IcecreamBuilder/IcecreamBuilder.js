@@ -49,9 +49,9 @@ function IcecreamBuilder(props) {
         if (type.startsWith('scoop')) {
             if (type === 'scoop') {
                 if (ingredients['scoop1'] === 'chocolate')
-                    setIngredient({ ...ingredients, 'scoop1': ingredients['scoop2'], 'scoop2': undefined})
+                    setIngredient({ ...ingredients, 'scoop1': ingredients['scoop2'], 'scoop2': undefined })
                 else
-                    setIngredient({ ...ingredients, 'scoop2': undefined})
+                    setIngredient({ ...ingredients, 'scoop2': undefined })
             } else {
                 if (ingredients['scoop1'] === 'straberry')
                     setIngredient({ ...ingredients, 'scoop1': ingredients['scoop2'], 'scoop2': undefined })
@@ -72,7 +72,10 @@ function IcecreamBuilder(props) {
 
     return (
         <Aux>
-            <Modal show ={purchasing }> <OrderSummary ingredients={ingredients} />  </Modal>
+            <Modal show={purchasing}
+                   modalClose={() => setPurchasing(false)}>
+                <OrderSummary ingredients={ingredients} />
+            </Modal>
             <Icecream icecreamcone={ingredients['icecreamcone']}
                 scoop1={ingredients['scoop1']}
                 scoop2={ingredients['scoop2']}
@@ -85,9 +88,9 @@ function IcecreamBuilder(props) {
                 price={totalPrice}
                 allCounts={ingredients}
                 purchasehandler={(totalPrice) => { setPurchasable({ purchasable: totalPrice > 0 }) }}
-                purchasing= {(e)=> {setPurchasing({purchasing:true}) }} 
-                />
-                
+                purchasing={(e) => { setPurchasing({ purchasing: true }) }}
+            />
+
         </Aux>
     );
 
