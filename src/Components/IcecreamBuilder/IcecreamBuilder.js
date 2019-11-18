@@ -30,7 +30,9 @@ function IcecreamBuilder(props) {
         setTotalprice(totalPrice - INGREDIENT_PRICE[type])
     }
     const [purchasable, setPurchasable] = useState(false);
-
+    const purchaseContinueHandler = ()=> {
+        alert('You Continue');
+    }
     const addIngredient = (type) => {
         if (type === 'scoop' || type === 'scoopstraberry') {
             if (!ingredients['scoop1']) {
@@ -74,7 +76,12 @@ function IcecreamBuilder(props) {
         <Aux>
             <Modal show={purchasing}
                    modalClose={() => setPurchasing(false)}>
-                <OrderSummary ingredients={ingredients} />
+                <OrderSummary ingredients={ingredients} 
+                             purchaseCancel= {() => setPurchasing(false)}
+                              purchaseContinue={purchaseContinueHandler}
+                              price={totalPrice}
+                              />
+                              
             </Modal>
             <Icecream icecreamcone={ingredients['icecreamcone']}
                 scoop1={ingredients['scoop1']}
@@ -88,7 +95,7 @@ function IcecreamBuilder(props) {
                 price={totalPrice}
                 allCounts={ingredients}
                 purchasehandler={(totalPrice) => { setPurchasable({ purchasable: totalPrice > 0 }) }}
-                purchasing={(e) => { setPurchasing({ purchasing: true }) }}
+                purchasing={(e) => { setPurchasing(true)}}
             />
 
         </Aux>

@@ -28,7 +28,7 @@ const IcecreamControls = (props) => {
 
     return (
     <div className={classes.BuildControls}>
-        <p> Total Price : {props.price} </p>
+        <p> Total Price : {props.price.toFixed(2)} </p>
         {controls.map((ctrl) => (
             <IcecreamControl key={ctrl.label}
                 label={ctrl.label}
