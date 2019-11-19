@@ -5,7 +5,7 @@
   height: 0;
 
   position: absolute;
-  top: 25rem;
+  top: 22rem;
   margin-left:-14px;
   border-left: 5rem solid transparent;
   border-right: 5rem solid transparent;
@@ -23,7 +23,7 @@
 
   position: absolute;
   left: 43%;
-  top: 13rem;
+  top: 9rem;
   z-index: 2;
 
   border-radius: 50%;
@@ -40,8 +40,8 @@
   height: 3.5rem;
 
   position: absolute;
-  left: 41%;
-  top:18rem;
+  left: 44%;
+  top:12rem;
   z-index: 2;
 
   border-radius: 50%;
@@ -145,13 +145,13 @@
 
 .Scoop:nth-of-type(1) {
   position: relative;
-  margin-top: 90%;
+  margin-top: 47%;
   z-index: 2;
 }
 
 .Scoop:nth-of-type(2) {
   position: relative;
-  margin-top: -140%;
+  margin-top: -130%;
   z-index: 1;
 }
 
