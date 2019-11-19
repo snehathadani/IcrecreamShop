@@ -1,0 +1,28 @@
+/* Only for smaller devices*/
+.SideDrawer{
+    position: fixed; /* It should always be on the page as we scroll, it should feel like a static element*/
+    width: 280px;
+    max-width: 70%; /* not 100% so that even on narrow devices it doesn't go over the edges*/
+    height: 100%;
+    left: 0;
+    top: 0; /* left and right should be zero so that it sits on the full screen*/
+    z-index: 200; /* higher than backdrop to make it sit on top of it*/
+    background-color: azure;
+    padding: 32px 16px;
+    box-sizing: border-box; /* adjust to the sizing of the padding*/
+    transition: transform 0.3s ease-out; /* for opening and closing sidedrawer*/
+
+}
+/* Dont show on bigger devices*/
+@media(min-width: 500px){
+    .SideDrawer{
+        display: none;
+    }
+}
+.Open{
+transform: translateX(0); /* this will position the sidedrawer in above defined class*/
+}
+
+.Close{
+transform: translateX(-100%);
+}
