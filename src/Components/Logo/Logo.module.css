@@ -1,0 +1,12 @@
+.Logo{
+    background-color: blanchedalmond;
+    padding:8px;
+    height:100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.Logo img{
+    height:100%;
+}

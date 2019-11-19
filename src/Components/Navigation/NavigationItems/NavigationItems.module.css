@@ -1,0 +1,10 @@
+/* Desktop First*/
+.NavigationItems{
+    margin:0;
+    padding:0;
+    list-style: none;
+    display:flex;/* to align list items next to each other*/
+    flex-direction: row;
+    align-items:center; /* to make sure they are veritically centered*/
+    height:100%; /* Take up all of the toolbar*/
+}
