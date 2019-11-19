@@ -1,0 +1,20 @@
+/* Mobile First will add others later flex for aligning all items next to each other*/
+
+.ToolBar{
+    height: 56px;
+    width:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: brown;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 20px;
+    z-index:90;
+    box-sizing: border-box /* to make sure that tool box is aligned with the padding perfectly z index should be smaller that backdrop*/
+    
+}
+.ToolBar nav {
+    height:100%;/* this will make sure that nav height will be controlled according to toolbar height and nav items span full height of the toolbar*/
+}
