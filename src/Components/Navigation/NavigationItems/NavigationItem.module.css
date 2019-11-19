@@ -21,7 +21,7 @@ align-items:center;
 .NavigationItem a:hover,
 .NavigationItem a:active,
 .NavigationItem a.active{
-    background-color: rgb(211, 186, 45);
+    background-color: rgb(184, 86, 86);
     border-bottom: 4px solid rgb(104, 86, 129);
    box-sizing: border-box;
    display:block;
